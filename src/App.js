@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 
 function App() {
   return (
+    <LoginContext.Provider value={{ user, setUser }}>
     <BrowserRouter>
       <Navs />
       <Routes>
@@ -23,6 +24,7 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+    </LoginContext.Provider>
   );
 }
 
